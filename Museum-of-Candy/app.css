@@ -1,0 +1,60 @@
+body{
+	background: #f9d9d5;
+	font-family: "Nunito", sans-serif;
+}
+
+#mainNavbar{
+	font-size: 1.5rem;
+	font-weight: 100;
+}
+
+#mainNavbar .nav-link{
+	color: white;
+}
+
+#mainNavbar .nav-link:hover{
+	color: white;
+	color: #EA1C2C;
+}
+#mainNavbar .navbar-brand{
+	color: #EA1C2C;
+}
+
+.navbar.scrolled{
+	background: rgb(222,192,222);
+	transition: background 500ms;
+}
+
+#headingGroup span{
+	color: #EA1C2C;
+}
+
+#headingGroup h2{
+	color: white;
+	font-weight: 100;
+	font-size: 4rem;
+}
+
+@media(max-width:1200px){
+	#headingGroup h2{
+	color: white;
+	font-weight: 100;
+	font-size: 3rem;
+}
+
+}
+.content{
+	margin-top: 50px;
+}
+
+#headingMilk h2{
+	font-weight: 100;
+	color: #EA1C2C;
+}
+
+#headingMilk p{
+	font-weight: 100;
+	color: #f498b8;
+	font-size: 1.125rem;
+	line-height: 2;
+}
