@@ -6,7 +6,10 @@ var age = prompt("Enter your Age");
 
 alert("Hello, " +firstName+" "+lastName);
 
+console.log("Hello, " +firstName+" "+lastName);
+
 alert("Your age, " +age);
+console.log("Your age, " +age);
 
 
 
