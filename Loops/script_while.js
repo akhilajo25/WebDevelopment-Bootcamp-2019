@@ -35,3 +35,18 @@ while(num_odd<=333){
 	}
 	num_odd++;
 }
+
+// Print all numbers divisible by 5 and 3 betweeen 5 and 50
+
+
+console.log("Printing all numbers divisible by 5 and 3 betweeen 5 and 50");
+
+var num=5
+
+while(num<=50){
+	if(num%5==0 && num%3==0){
+		console.log(num);
+	}
+	num++;
+}
+
