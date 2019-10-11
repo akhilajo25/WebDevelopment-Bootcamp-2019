@@ -20,6 +20,6 @@ console.log(f3);
 
 // 4
 
-var f4= document.getElementsByTagName("p");
+var f4= document.querySelector("#first");
 
 console.log(f4);
