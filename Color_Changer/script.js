@@ -14,5 +14,12 @@ button_operation.addEventListener("click",function(){
 	}else{
 		document.body.style.background = "purple";
 		isPurple=true;
+
 	}
 });
+
+
+
+// button_operation.addEventListener("click",function(){
+// 	document.body.classList.toggle("purple");
+// });
