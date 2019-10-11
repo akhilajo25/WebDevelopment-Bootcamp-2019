@@ -8,7 +8,7 @@ console.log(f);
 
 // 2
 
-var f2= document.getElementsByClassName("special");
+var f2= document.getElementsByClassName("special")[0];
 
 console.log(f2);
 
