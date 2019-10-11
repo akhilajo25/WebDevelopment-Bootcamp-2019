@@ -1,0 +1,25 @@
+alert("Hey!");
+
+// 1
+
+var f = document.getElementById("first");
+
+console.log(f);
+
+// 2
+
+var f2= document.getElementsByClassName("special");
+
+console.log(f2);
+
+// 3
+
+var f3= document.querySelector("p");
+
+console.log(f3);
+
+// 4
+
+var f4= document.getElementsByTagName("p");
+
+console.log(f4);
