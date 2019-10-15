@@ -12,10 +12,16 @@ app.get("/", function(req,res){
 
 });
 
-app.get("/bye", function(req,res){   
-
-	res.send("Good-Bye!");
-
+app.get("/speak/:animal", function(req,res){   
+	var sounds = {
+		pink:"Oink",
+		cow:"mooo",
+		dog:"wooow",
+		goldfish:"...."
+	}
+	var animal = req.params.animal;
+	var sound=sounds[animal];
+	res.send("The "+animal+" says ' "+sound+" ' ");
 });
 
 
@@ -28,5 +34,5 @@ app.listen(3000,function(){
 /*When you go to an undefined route we normally get Cannot GET/ blah/ to avoid it we mostly */
 
 app.get("*", function(req,res){
-	res.send("404! Error!!!!")
+	res.send("Sorry, Page not found!!!! What are you doing with your life???")
 })
