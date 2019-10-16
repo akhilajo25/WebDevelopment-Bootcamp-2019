@@ -25,6 +25,7 @@ function searchWeather(query){
 function init(resultFromServer){
 	console.log(typeof resultFromServer["cod"]);
 	if(resultFromServer["cod"] == 404 ){
+		document.body.style.backgroundImage="url('default.jpg')";
 		var weatherContainer = document.getElementById('weatherContainer');
 		notFoundHeader.style.visibility = 'visible';
 		weatherContainer.style.visibility = 'hidden';
