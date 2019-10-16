@@ -78,9 +78,14 @@ function setPosition(){
 	weatherContainer.style.visibility = 'visible';
 }
 
-document.getElementById('searchBtn').addEventListener('click',()=>{
-	var query = document.getElementById('searchInput').value;
-	if(query)
-	searchWeather(query);
-	document.getElementById('searchInput').value="";
+document.getElementById('searchInput').addEventListener('keyup',function(e){
+	if (event.keyCode === 13){
+		event.preventDefault();
+   		document.getElementById("searchBtn").click();
+		var query = document.getElementById('searchInput').value;
+			if(query){
+				searchWeather(query);
+				document.getElementById('searchInput').value="";
+			}
+	}
 })
