@@ -3,6 +3,7 @@ var appId = 'b8779202d4a0cf1d8b4c7047a3953d6c';
 var units = 'imperial';
 
 var searchMethod='';
+var notFoundHeader = document.getElementById('notFound');
 
 function getSearch(query){
 	if(query.length === 5 && Number.parseInt(query)+''=== query)
@@ -24,11 +25,11 @@ function searchWeather(query){
 function init(resultFromServer){
 	console.log(typeof resultFromServer["cod"]);
 	if(resultFromServer["cod"] == 404 ){
-		var notFoundHeader = document.getElementById('notFound');
 		var weatherContainer = document.getElementById('weatherContainer');
 		notFoundHeader.style.visibility = 'visible';
 		weatherContainer.style.visibility = 'hidden';
-	}
+	}else{
+	notFoundHeader.style.visibility = 'hidden';
 	switch(resultFromServer.weather[0].main){
 		case 'Clouds':
 			document.body.style.backgroundImage="url('clouds.jpg')";
@@ -72,6 +73,7 @@ function init(resultFromServer){
 	cityHeader.innerHTML = resultFromServer.name;
 	humidity.innerHTML = 'Humidity levels at '+ resultFromServer.main.humidity+'%'
 	setPosition();
+}
 }
 
 function setPosition(){
