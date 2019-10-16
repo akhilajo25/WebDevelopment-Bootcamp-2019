@@ -13,6 +13,12 @@ body{
     font-family: "palantino Linotype", "Book Antiqua", Palantino, serif;
 }  
 
+#notFound{
+	visibility: hidden;
+	text-align: center;
+	padding: 50px;
+}
+
 #weatherContainer{
 	background-color: rgba(0,0,0,0.25);
 	box-shadow: 1px 1px 5px black;

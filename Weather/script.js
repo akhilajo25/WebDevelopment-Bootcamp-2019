@@ -22,8 +22,13 @@ function searchWeather(query){
 }
 
 function init(resultFromServer){
-
-	console.log(resultFromServer.weather[0].main);
+	console.log(typeof resultFromServer["cod"]);
+	if(resultFromServer["cod"] == 404 ){
+		var notFoundHeader = document.getElementById('notFound');
+		var weatherContainer = document.getElementById('weatherContainer');
+		notFoundHeader.style.visibility = 'visible';
+		weatherContainer.style.visibility = 'hidden';
+	}
 	switch(resultFromServer.weather[0].main){
 		case 'Clouds':
 			document.body.style.backgroundImage="url('clouds.jpg')";
