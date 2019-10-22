@@ -1,0 +1,64 @@
+#container{
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	width:300px;
+	background-color: #f7f7f7 ;
+	margin: 100px auto;
+	border-radius: 10%;
+	position: relative;
+
+}
+#attributes .col{
+	padding: 10px;
+}
+#attributes i{
+	margin-right: 10px;
+	margin-left: 20px;
+	padding: 5px;
+	height: 8px;
+	width: 18px;
+}
+#attributes .text{
+  margin: 0px;
+  overflow: hidden;
+  font-family: dana;
+  font-size: 9px;
+  }
+
+#attributes .cust-margin{
+	margin:0px;
+	font-family: dana;
+	font-size: 10px;
+}
+
+img {
+  border-radius: 10%;
+  width: 300px;
+}
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.row #top-left {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  color:white;
+  font-family: dana;
+}
+
+.row #name{
+  font-size: 40px;
+  margin: 0px 0px 0px;
+  line-height:35px;
+}
+
+.row #country{
+  font-size: 15px;
+  margin: 0px 0px 0px;
+  padding-bottom: 2px;
+}
+.row #dayDate{
+  font-size: 10px;
+  margin: 0px 0px 0px;
+}
+
