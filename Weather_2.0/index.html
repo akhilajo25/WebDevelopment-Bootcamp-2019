@@ -10,27 +10,42 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.2/moment.min.js"></script>
+
     <title>XWeather</title>
   </head>
   <body>
+    <div id="searchContainer">
+      <input class="searchControl" type="text" id="searchInput" placeholder="City Name">
+      <button class="searchControl" id="searchBtn">Search</button>
+    </div>
+
     <div id="container">
-      <div class="row">
-        <img src="assets/images/arizona.jpg" alt="Avatar">
-        <div id="top-left">
-          <h5 id="name">Arizona,</h5>
-          <h6 id="country">Southwestern,US</h6>
-          <h6 id="dayDate"><span>Wednesday</span>,<span>8 Nov</span></h6>
+      
+        <div class="row">
+          <img id="custImg"  src="assets/images/default.jpg">
+          <div id="top-left">
+            <h5 id="name"></h5>
+           <!--  <h6 id="country">Southwestern,US</h6> -->
+            <h6 id="dayOfWeek"></h6>
+          </div>
+          <div id="weatherMain">
+            <center><i id="documentIconImg" class="fas fa-cloud fa-2x"></i></center>
+            <center><div id="weatherDescHeader"></div></center>
+          </div>
         </div>
-      </div>
+      
       <div id="attributes">
           <div class="row">
             <div id="temprature" class="col">
               <i class="fa fa-thermometer-three-quarters fa-1.3x pull-left" aria-hidden="true"></i>
-              <div class="text"><h6 class="cust-margin"><strong> Temprature </strong></h6>26&deg|28&deg</div>
+              <div class="text"><h6 class="cust-margin"><strong> Temprature </strong></h6><span id="minTemp"></span>&deg|<span id="maxTemp"></span>&deg</div>
             </div>
             <div id="feelsLike" class="col">
               <i class="fa fa-thermometer-half fa-1.3x pull-left" aria-hidden="true"></i>
-              <div class="text"><h6 class="cust-margin"><strong>Feels like</strong></h6>27&deg</div>
+              <div class="text"><h6 class="cust-margin"><strong>Feels like</strong></h6><span id="temp"></span>&deg</div>
             </div>
           </div>
           <div class="row">
@@ -40,12 +55,20 @@
             </div>
             <div id="windSpeed" class="col">
               <i class="fas fa-wind fa-1.3x pull-left"></i>
-              <div class="text"><h6 class="cust-margin"><strong>Wind speed</strong></h6>0.25 km/h</div>
+              <div class="text"><h6 class="cust-margin"><strong>Wind speed</strong></h6><span id="wind"></span></div>
             </div>
           </div>        
       </div>
+
+      <section>
+        <center><h4>Daily Forecast</h4></center>
+        <canvas id="myChart" width="200" height="150"></canvas>
+      </section>
+            
+     
     </div>
     <!-- Optional JavaScript -->
+    <script src="assets/js/script.js" type="text/javascript" ></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
