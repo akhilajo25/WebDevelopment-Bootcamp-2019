@@ -36,62 +36,90 @@ function dailyForecast(query){
 function init(resultFromServer){
 	var weatherContainer = document.getElementById('container');
 	weatherContainer.style.visibility = 'visible';
-	console.log(resultFromServer.id);
+	console.log(resultFromServer.dt);
 	var c = document.getElementById("custImg");
 	var weatherIcon = document.getElementById('documentIconImg');
 /*	console.log(c);*/
 	switch(resultFromServer.weather[0].main){
 		case 'Clouds':
-			c.src="assets/images/clouds.jpg";
+			
 			document.getElementById('documentIconImg').className="fas fa-cloud-moon fa-2x";
 			break;
 
 		 case 'Clear':
-		 	c.src="assets/images/Clear.jpg";
+		 	
 		 	document.getElementById('documentIconImg').className="fas fa-sun fa-2x";
 		 	break;
 
 		 case 'Rain':
-		 	c.src="assets/images/rain.jpg";
 		 	document.getElementById('documentIconImg').className="fas fa-cloud-showers-heavy fa-2x";
 		 	break;
 
-		 case 'Thunderstorm':
-		 	c.src="assets/images/storm.jpg";
+		 case 'Haze':
 		 	document.getElementById('documentIconImg').className="fas fa-bolt fa-2x";
 		 	break;
 
 		default:
-			c.src="assets/images/default.jpg";
+			document.getElementById('documentIconImg').className="fas fa-cloud-sun fa-2x";
+			break;
+	}
+
+	switch(resultFromServer.name){
+			case 'New York':
+			c.src="assets/images/NY.jfif";
+			break;
+
+		 case 'Arizona':
+		 	c.src="assets/images/Arizona.jfif";
+		 	break;
+
+		 case 'Miami':
+		 	c.src="assets/images/Miami.jfif";
+		 	break;
+
+		 case 'Agra':
+		 	c.src="assets/images/Agra.jfif";
+		 	break;
+
+		default:
+			c.src="assets/images/City.jfif";
 			break;
 	}
 	
 	var weatherDescHeader = document.getElementById('weatherDescHeader');
 	var name = document.getElementById('name');
+	var countryDesc = document.getElementById('country');
 	var dayName=document.getElementById('dayOfWeek');
 	var currTemp = document.getElementById('temp');
 	var mintemprature = document.getElementById('minTemp');
 	var maxtemprature = document.getElementById('maxTemp');
 	var windSpeed = document.getElementById('wind');
 	var weatherIcon = document.getElementById('documentIconImg');
+	var tempOnImg = document.getElementById('tempMain');
+	var currDate = document.getElementById('dayOfMonth');
 	
 	weatherIcon.src = "http://openweathermap.org/img/w/"+ resultFromServer.weather[0].icon+".png";
 	var resultDesc = resultFromServer.weather[0].description;
 	weatherDescHeader.innerText = resultDesc.charAt(0).toUpperCase()+resultDesc.slice(1);	
-
 	windSpeed.innerHTML = Math.floor(resultFromServer.wind.speed) + ' m/s';
 	name.innerHTML = resultFromServer.name;
+	countryDesc.innerHTML = resultFromServer.sys.country;
 	currTemp.innerHTML = resultFromServer.main.temp;
 	mintemprature.innerHTML= resultFromServer.main.temp_min;
 	maxtemprature.innerHTML = resultFromServer.main.temp_max;
+	tempOnImg.innerHTML=Math.floor(resultFromServer.main.temp)+'&#176';
+
+	var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+	var d = new Date(resultFromServer.dt * 1000);
+	dayName.innerHTML = days[d.getDay()];
+	currDate.innerHTML = moment(d).format("Do MMM");
+	
 }
 
 function deduceDay(dt){
 	var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 	var d = new Date(dt * 1000);
-	// var WeekDay= days[d.getDay()];
 	var date=d.getDate();
-	//return (moment(d).format('L'));
 	return date;
 }
 

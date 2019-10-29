@@ -50,13 +50,13 @@
 #attributes .text{
   margin: 0px;
   overflow: hidden;
-  font-family: dana;
+  font-family: "Nunito", sans-serif;
   font-size: 9px;
   }
 
 #attributes .cust-margin{
 	margin:0px;
-	font-family: dana;
+	font-family: "Nunito", sans-serif;
 	font-size: 10px;
 }
 
@@ -74,7 +74,14 @@ img {
   top: 30px;
   left: 25px;
   color:white;
-  font-family: dana;
+  font-family: "Nunito", sans-serif;
+}
+
+.row #top-right {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+  font-size: 18px;
 }
 
 .row #name{
@@ -95,27 +102,42 @@ img {
 }
 
 #weatherDescHeader{
-        float:left; 
-        clear: both;
-    } 
+  float:left; 
+  clear: both;
+} 
 
 .row #weatherMain {
   position: absolute;
-  top: 23%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white; 
-  font-family: dana;
+  font-family: "Nunito", sans-serif;
   margin: 0px auto;
   font-size: 20px;
 }
-#weatherMain img{
-  height: 30px;
-  width: 30px;
+#weatherMain i{
+  opacity: 0.9;
+  font-size: 90px; 
 }
 #weatherMain div{
   display: inline-block;
 }
+#tempMain{
+  font-size:50px ;
+  font-weight: bold;
+}
 canvas{
+  font-family: "Nunito", sans-serif;
   padding: 15px;
+}
+.imgContainer{
+  position: relative;
+  color: white;
+}
+.collapse h4{
+  padding-left:30px;
+  font-family: "Nunito", sans-serif;
+  font-size:20px;
+  font-weight: bold; 
 }
