@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "wifisniffer",
+  "private_key_id": "28b7979a8d5a6fae561c3e5bd3b4008cf5bac67d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDayUYSo0USEi7T\nFAuvXgOTuDRiZ82SNEqcEOXtTU5L4D+xs4L6LxG2y4WU4hDasi/U63PRAYUF2irm\nntxva4cz1ZzllWbl5Fr9R4ZxMNXfbbOWEq64GgTVTUe2IkbNHdrBSKkBdoGX4TEn\nULpQ+Wx6MydRNmdxwRWIiHBl7zjicG/gZwvpwo8+ApNJApNkxq8Y/BFG/CL3Yee1\nSt1rfqqju0wiW+yRi3liTOP8SCSyU/5fhXnIIK9VY0vYxPh5nhG1autFqFsS3L4w\nS0Ar8wZokvfZXgU648664F0fma1bsObT3fQGA2zt13w7uzBIbLEE50rbyukKiKi3\nfAKY1qQxAgMBAAECggEAWcPlDTaR20U8kvwRg0U2gIA+dfWTAZ6U0g2Y2NE0A6uh\nVn6Jia6QPQip6RkLwz8CowBrx2AxPOJzYaXiWZCrq1fEhOnUixQzROH4xi48QeyX\nl0ZZC04Zl46akp7jn7rVCyKNvPzrVO5fJXtYxmpf2I9uXULOFH0dIaShQSFynGy0\n/AXDXKoNJ9Z086OUmfz5lAdicQgPx7nwkmYPdnZaLpFjddpNIBwdSmuZf5ODzahA\nEaxRk89+psG4e13UQb3hO9+eTwqTNIaow0oigfqsD8Uy5QlUvOGIkgyzQ838vm8L\n36Pp0I14mage70uiG+U4BqsYK+dJbwa0wTg1CoY3hQKBgQD4asoe1oHeQKEarERs\n+/sbzNaNMHvFchlKKT4We8C3S8icCP+9boavGl68cWlsTlBXSHMV/5CYNuSs7c7t\n9/E3anyp3GG2frzM/poC9DP3M3yezA5nUjnOPZHWURKbEUKh6mOBG8t9qNf3+0hL\nS0laCS1nkX4l+HWLBBH20CNbfwKBgQDhdvBStCqToRT+djefEXxSAUbX2xtkMlVI\n1sCQ2rjjlAIXjD9pu3hbb9KfIRr0IYWQboi6jZxIJd6a/CcCWfkQxaS0/DzEhPM/\n5s3ZvFabt8/+YBc1lHErRQSsEM7Lakxakw1ZBh7nSj8jJZ+x1skuJBLIjmzQkV+i\npcMUlWaYTwKBgA+qhGafdn8yqjZJaONKnNJq/5jV1uhjwq6HnU/DrCqjD9qvQpmK\nr9m5GwJdUJ2w7qYifoeDn3XJ+G/ja2pceYzaHVSE/nCI25U99S58gg5z48cL7Vic\nueKExX6zjC3VT9NwOag5vYKGNGCCK1P8Qnr4GzHt3fu9CISk1BExnRk3AoGAUjAb\nNuq6QoqLrp7Fc9TZ7sLMYk9a0tGOSTkPhT5V+4+um4riataN7zb6HkvhGXFG0Pma\nGfcZKyuy0+hrB+5oXnbNrbPtKu4UBg1KqL6BC86boWzBySRNhKpqI5cU6w3au4Gz\ncepLRaDJFzTV2+wh9hHsTvOsMvNrW0z1qgE0Hv0CgYAzFQj7KzWyHxHYHl8MHeM0\nAEoU5K3XTcpTAkUXP6D24waNdDwwxuXUZqqhVMZT2U+ZzC/yMqEGGNHqW0Mv7clD\nqsAGKebAsEN1NzsISMGZDIddEylJbMp8P4Xa2pi4FN3e866C4q3VMC0+cmFbcxwq\nE+5F2YERGF53WIWZp1RaRQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "akhila@wifisniffer.iam.gserviceaccount.com",
+  "client_id": "106067077147090141588",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/akhila%40wifisniffer.iam.gserviceaccount.com"
+}
